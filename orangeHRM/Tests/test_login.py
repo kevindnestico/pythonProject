@@ -33,7 +33,7 @@ class OrangeHRMLogin(unittest.TestCase):
         home_page = HomePage(driver)
         home_page.click_welcome()
         home_page.click_logout()
-        time.sleep(4)
+        time.sleep(2)
         assert "No results found." not in driver.page_source
 
     def tearDown(self):
